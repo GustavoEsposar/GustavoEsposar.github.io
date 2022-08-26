@@ -12,11 +12,11 @@ Date:   2022 07 15
     line-height: 1.6;
 }
 
-/*
+
 body {
-    background: url("docs/capa.jpg") no-repeat center fixed;
-    background-size: cover;
-}*/
+    background-color: black;
+    position: relative;
+}
 
 video {
     position: fixed;
@@ -183,10 +183,19 @@ h4 {
         display: none;
     }
 
-    body {
-        background: url("docs/img/footage_Moment.jpg");
+    body::before {
+        content: "";
+        position: fixed;
+        background-image: url("docs/img/footage_Moment.jpg");
         background-size: cover;
         background-position: center;
+        height: 100vh;
+        width: 100vw;
+        min-height: var(--original-viewport-height);
+        left: 0;
+        top: 0;
+        will-change: transform;
+        z-index: -2;
     }
 
     header {
