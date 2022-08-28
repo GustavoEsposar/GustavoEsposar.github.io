@@ -1,0 +1,122 @@
+/**************************************
+    Responsiveness to width changes    
+***************************************/
+@media screen and (max-width:1401px) {
+    .nav .sub-container {
+        width: 35%;
+    }
+
+    .content .left-aside {
+        width: 42%;
+    }
+    
+    .content .right-aside {
+        width: 53%;
+        height: 420px;
+    }
+}
+
+@media screen and (max-width:1216px) {
+    .container {
+        width: 90vw;
+    }
+
+    .header .listElements .name h1 {
+        font-size: 3.1em;
+        letter-spacing: 2px;
+    }
+}
+
+@media screen and (max-width:975px) {
+    .container {
+        width: 80vw;
+    }
+
+    .nav .sub-container {
+        width: 45%;
+    }
+
+    .content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .content .left-aside {
+        width: 100%;
+    }
+
+    .content .right-aside {
+        margin-top: 40px;
+        width: 90%;
+    }
+}
+
+@media screen and (max-width:800px) {
+    .nav .sub-container {
+        width: 55%;
+    }
+
+    .header .listElements .name h1 {
+        font-size: 2.65em;
+        letter-spacing: 2px;
+    }
+}
+
+@media screen and (max-width:674px) {
+    .container {
+        width: 85vw;
+    }
+
+    .background-video {
+        position: fixed;
+        height: 100vh;
+        width: auto;
+        min-height: var(--original-viewport-height);
+        left: -100%;
+        top: 0;
+        will-change: transform;
+        z-index: -1;
+        transform: translate(0, 0);
+    }
+
+    .header .listElements {
+        height: 520px;
+    }
+
+    .nav .sub-container {
+        width: 95%;
+    }
+
+    .header .listElements {
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .content .right-aside {
+        width: 100%;
+    }
+
+    .content .left-aside {
+        background: linear-gradient(-45deg,
+        rgba(27, 93, 101, 1),
+        rgba(20, 118, 143, 1),
+        rgba(63, 152, 170, 1));
+        animation: none;
+    }
+
+    .content .left-aside .projectsList li .previewPic{
+        position: relative;
+        display: none;
+    }
+
+    .content .left-aside .projectsList li a:hover + .previewPic {
+        display: block;
+    }
+
+    .footer .iconsList {
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        height: 500px;
+    }
+}

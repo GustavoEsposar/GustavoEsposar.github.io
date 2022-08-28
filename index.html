@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--Resets/scripts-->
-    <link rel="stylesheet" href="docs/normalize.css">
+    <title>Gustavo B. Esposar</title>
+    <link rel="icon" type="image/svg" href="homeDocs/img/dev.svg"/>
+    <!-- Setting a constant for viewPort Height  -->
+    <script>document.documentElement.style.setProperty('--original-viewport-height', window.innerHeight+"px")</script>
     <!--Google fonts imports-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,90 +21,114 @@
 
         gtag('config', 'G-15PRHCKVBJ');
     </script>
-    <link rel="stylesheet" href="style.css">
-    <title>Gustavo B. Esposar</title>
-    <link rel="icon" type="image/svg" href="docs/img/dev.svg"/>
-    <!-- Setting a constant for viewPort Height  -->
-    <script>document.documentElement.style.setProperty('--original-viewport-height', window.innerHeight+"px")</script>
+    <!-- CSS Styles -->
+    <link rel="stylesheet" href="css_home/main.css">
+    <!-- Meta Tag SEO-->
+    <meta name="description" content="Portifólio Gustavo Barbieri Esposar, currículo PUCSP, ciência da computação, projetos de programação">
 </head>
-
 <body>
-    <video poster="docs/img/footage_Moment.jpg" autoplay muted loop>
-        <source src="docs/img/footage.mp4" type="video/mp4">
+    <video class="background-video" poster="docs_home/img/footage_Moment.jpg" autoplay muted loop playsinline>
+        <source src="docs_home/img/footage.mp4" type="video/mp4">
     </video>
-    <header class="container">
-        <img src="docs/img/perfil.jpg" alt="Foto: Gustavo B. Esposar">
-        <H1><strong>Gustavo Barbieri Esposar</strong></H1>
-
-        <a id="brasao" href="https://www.linkedin.com/school/puc-sp/" target="_blank" rel="noopener noreferrer opener">
-            <img src="docs/img/PUC-brasao.png" alt="Foto: Brasão da PUC São Paulo">
-        </a>
-
-    </header>
-    <div class="container">
-        <aside>
-            <h1>Quem sou?</h1>
-
-            <p>
-                Olá, sou o Gustavo, estudante da <strong>PUC-SP</strong> e atualmente cursando o quarto semestre de
-                <em>Ciência da Computação.</em>
-                <br><br>
-            </p>
-            <p>
-                Entusiasmado com <em>UI/UX</em> e desenvolvimento <em>Front-End</em>, também busco conhecimento
-                <em>Back-End</em>
-                para estruturar aplicações versáteis e sólidas, trabalhando como <strong>desenvolvedor
-                    Full-Stack</strong>.
-                <br><br>
-            </p>
-            <h3>Habilidades:</h3>
-            <ul>
-                <li>C</li>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
+    <section class="container">
+        <!-- Header Content -->
+        <header class="header">
+            <ul class="listElements">
+                <li class="profile">
+                    <img src="docs_home/img/perfil.jpg" alt="Foto: Gustavo B. Esposar">
+                </li>
+                <li class="name">
+                    <H1><strong>Gustavo Barbieri Esposar</strong></H1>
+                </li>
+                <li class="univ">
+                    <a href="https://www.linkedin.com/school/puc-sp/" target="_blank" rel="noopener noreferrer opener">
+                        <img src="docs_home/img/PUC-brasao.png" alt="Foto: Brasão da PUC São Paulo">
+                    </a>
+                </li>
             </ul>
-            <p>
-                Apaixonado por música, tenho como hobbies tocar guitarra, praticar musculação e as vezes me estressar
-                com jogos FPS competitivos.
-            </p>
-
-        </aside>
-        <section class="container-iframe">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/LLWyCAjDFQs"
+        </header>
+        <!-- Nav Bar -->
+        <nav class="nav">
+            <div class="sub-container">
+                <ul class="listLinks">
+                    <li class="about">
+                        <a href="#">Quem sou</a>
+                    </li>
+                    <li class="projects">
+                        <a href="#">Projetos</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- Content Section -->
+        <section class="content">
+            <aside class="left-aside">
+                <h1>Sobre mim</h1>
+                <p>
+                    Olá, sou o Gustavo, estudante de <strong>Ciência da Computação</strong> na <strong><em>PUC-SP</em></strong>
+                    e atualmente no quarto período do curso. Seja muito bem-vindo(a) ao meu Portifólio!
+                </p>
+                <p>
+                    Na seção <span><strong>Projetos</strong></span> estão disponíveis alguns trabalhos desenvolvidos para estudo.
+                    Atualmente focado em Desenvolvimento Web e entusiasmado com UI/UX, área que tenho muito interesse
+                    em me aprofundar para um desenvolvimento Front-End bem arquitetado.
+                </p>
+                <p> 
+                    No entanto não deixo o Back-End
+                    de lado, sendo minha ênfase de Back banco de dados não relacionais como MongoDB.</p>
+                <p>
+                    <h3>Habilidades:</h3>
+                    <ul>
+                        <li>C</li>
+                        <li>Java</li>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                    </ul>
+                </p>
+                <p>
+                    Apaixonado por música, tenho como hobbies tocar guitarra, praticar musculação e as vezes "exercitar
+                    minha paciência" com jogos FPS competitivos.
+                </p>
+            </aside>
+            <aside class="right-aside">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/LLWyCAjDFQs"
                 title="YouTube video player" frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen>
-            </iframe>
+                </iframe>
+            </aside>
         </section>
-    </div>
-    <footer class="container">
-        <ul>
-            <li class="icon">
-                <a href="https://www.instagram.com/gu_esposar/" target="_blank" rel="noopener noreferrer opener">
-                    <img src="docs/img/instagram.png" alt="Icone: Instagram">
-                </a>
-            </li>
-            <li class="icon">
-                <a href="https://br.linkedin.com/in/gustavo-barbieri-esposar-a799b6214" target="_blank"
-                    rel="noopener noreferrer opener">
-                    <img src="docs/img/linkedin.png" alt="Icone: Linkedin">
-                </a>
-            </li>
-            <li class="icon">
-                <a href="https://github.com/GustavoEsposar" target="_blank" rel="noopener noreferrer opener">
-                    <img src="docs/img/github.png" alt="Icone: GitHub">
-                </a>
-            </li>
-            <li>
-                <a href="https://open.spotify.com/user/pb6sepufz24mv8kojqq1efn34?si=4b1ae278b69f4fde" target="_blank"
-                    rel="noopener noreferrer opener">
-                    <img src="docs/img/spotify.png" alt="Icone: Spotify">
-                </a>
-            </li>
-        </ul>
-        <h4>Developed by <em>Gustavo B. Esposar</em></h4>
-    </footer>
+        <!-- Footer Content -->
+        <footer class="footer">
+            <ul class="iconsList">
+                <li class="icon">
+                    <a href="https://www.instagram.com/gu_esposar/" target="_blank" rel="noopener noreferrer opener">
+                        <img src="docs_home/img/instagram.png" alt="Icone: Instagram">
+                    </a>
+                </li>
+                <li class="icon">
+                    <a href="https://br.linkedin.com/in/gustavo-barbieri-esposar-a799b6214" target="_blank"
+                        rel="noopener noreferrer opener">
+                        <img src="docs_home/img/linkedin.png" alt="Icone: Linkedin">
+                    </a>
+                </li>
+                <li class="icon">
+                    <a href="https://github.com/GustavoEsposar" target="_blank" rel="noopener noreferrer opener">
+                        <img src="docs_home/img/github.png" alt="Icone: GitHub">
+                    </a>
+                </li>
+                <li class="icon">
+                    <a href="https://open.spotify.com/user/pb6sepufz24mv8kojqq1efn34?si=4b1ae278b69f4fde" target="_blank"
+                        rel="noopener noreferrer opener">
+                        <img src="docs_home/img/spotify.png" alt="Icone: Spotify">
+                    </a>
+                </li>
+            </ul>
+            <h4>Developed by <em>Gustavo B. Esposar</em></h4>
+        </footer>
+    </section>
+    <!-- JavaScript import -->
+    <script src="script.js"></script>
 </body>
-
 </html>

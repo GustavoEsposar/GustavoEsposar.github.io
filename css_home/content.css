@@ -1,0 +1,108 @@
+/*************    
+    CONTENT     
+**************/
+.content {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 20px;
+    color: white;
+    height: 100%;
+}
+
+.content .left-aside {
+    width: 36%;
+    min-height: 500px;
+    padding: 20px;
+    border-radius: 15px;
+    background: linear-gradient(-45deg,
+    rgba(13, 36, 42, 1) 0%,
+    rgba(27, 93, 101, 1) 20%,
+    rgba(20, 118, 143, 1) 40%,
+    rgba(63, 152, 170, 1) 60%,
+    rgb(94, 149, 163) 80%,
+    rgb(145, 188, 197) 100%);
+    background-size: 400% 400%;
+    animation: backgroundChange 15s ease infinite;
+    box-shadow: 0 0 20px aliceblue;
+}
+
+.content .left-aside h1 {
+    text-align: center;
+    font-size: 2em;
+}
+
+.content .left-aside p {
+    font-size: 1.2em;
+    text-indent: 20px;
+    margin: 10px 0;
+}
+
+.content .left-aside ul {
+    position: relative;
+    left: 5%;
+    font-size: 1.2em;
+    font-style: italic;
+}
+
+.content .left-aside h3 {
+    font-size: 1.5em;
+}
+
+.content .left-aside a {
+    font-style: normal;
+    text-decoration: none;
+    letter-spacing: 2px;
+    color: aliceblue;
+    text-shadow: 0 0 5px var(--blur-color);
+    font-size: 1.2em;
+    font-weight: bold;
+    transition: all 200ms ease;
+}
+
+.content .left-aside .projectsList li {
+    position: relative;
+}
+
+.content .left-aside .projectsList li a:hover {
+    text-shadow: 0 0 15px white;
+}
+
+.content .left-aside .projectsList li a:hover + .previewPic {
+    visibility: visible;
+    opacity: 1;
+}
+
+.content .left-aside .projectsList .previewPic {
+    position: absolute;
+    height: 100px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px aliceblue;
+    right: 5%;
+    z-index: 1;
+    visibility:hidden;
+    opacity:0;
+    transition:visibility linear 200ms, opacity 200ms linear;
+}
+
+.content .right-aside {
+    position: sticky;
+    overflow: hidden;
+    top: 40px;
+    /*padding-top: 56.26%;*/
+    text-align: center;
+    width: 60%;
+    height: 500px;
+    background-color: black;
+    border-radius: 3%;
+    box-shadow: 0 0 20px aliceblue;
+}
+
+.content .right-aside iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+}

@@ -1,0 +1,55 @@
+/*************    
+    HEADER       
+**************/
+.header {
+    margin-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid aliceblue;
+}
+
+.header .listElements {
+    display: flex;
+    justify-content: space-around;
+}
+
+.header .listElements li {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    height: 150px;
+    align-items: center;
+}
+
+.header .listElements .profile img {
+    height: 150px;
+    border: 2px solid white;
+    border-radius: 50%;
+    box-shadow: 0 0 20px white;
+}
+
+.header .listElements .name {
+    text-align: center;
+}
+
+.header .listElements .name h1 {
+    font-family: 'Comfortaa', cursive;
+    font-size: 3.2em;
+    letter-spacing: 5px;
+    color: aliceblue;
+    text-shadow: 0 0 5px var(--blur-color);
+    /*    padding-top: 20px;*/
+}
+
+.header .listElements .univ img {
+    height: 155px;
+}
+
+.header .listElements .univ a {
+    border-radius: 20px;
+    transition: 300ms;
+}
+
+.header .listElements .univ a:hover {
+    box-shadow: 0 0 20px white;
+    background-color: rgba(0, 0, 0, 0.5);
+}
