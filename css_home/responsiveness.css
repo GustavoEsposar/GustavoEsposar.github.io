@@ -91,6 +91,10 @@
         flex-direction: column;
         justify-content: space-between;
     }
+    
+    .content .left-aside {
+        min-height: auto;
+    }
 
     .content .right-aside {
         width: 100%;
