@@ -9,7 +9,7 @@ buttonAbout.onclick = () => {
         <h1>Sobre mim</h1>
         <p>
             Olá, sou o Gustavo, estudante de <strong>Ciência da Computação</strong> na <strong><em>PUC-SP</em></strong>
-            e atualmente no quarto período do curso. Seja muito bem-vindo(a) ao meu Portifólio!
+            e atualmente no quarto período do curso. Seja muito bem-vindo(a) ao meu Portfólio!
         </p>
         <p>
             Na seção <span><strong>Projetos</strong></span> estão disponíveis alguns trabalhos desenvolvidos para estudo.
@@ -43,19 +43,19 @@ buttonProjects.onclick = () => {
             <ul class="projectsList">
                 <li class="project">
                     <a href="desafioConsultaCEP/index.html" target="_blank" rel="noopener noreferrer">Consulta CEP</a>
-                    <img class="previewPic" src="docs_consultaCep/preview_consultaCep.png" alt="">
+                    <img class="previewPic" src="docs_consultaCep/preview_consultaCep.png" alt="Miniatura: projeto consulta cep">
                 </li>
                 <li class="project">
                     <a href="https://github.com/GustavoEsposar/Josephus_Problem" target="_blank" rel="noopener noreferrer">Josephus_Problem</a>
-                    <img class="previewPic" src="docs_consultaCep/preview_Josephus_Problem.png" alt="">
+                    <img class="previewPic" src="docs_consultaCep/preview_Josephus_Problem.png" alt="Miniatura: projeto Josephus problem">
                 </li>
                 <li class="project">
                     <a href="https://github.com/GustavoEsposar/Student_Registration" target="_blank" rel="noopener noreferrer">Student_Registration</a>
-                    <img class="previewPic" src="docs_consultaCep/preview_Student_Registration.png" alt="">
+                    <img class="previewPic" src="docs_consultaCep/preview_Student_Registration.png" alt="Miniatura: projeto Student Registration">
                 </li>
                 <li class="project">
                     <a href="https://github.com/GustavoEsposar/ggfx_lic_domino" target="_blank" rel="noopener noreferrer">ggfx_lic_domino</a>
-                    <img class="previewPic" src="docs_consultaCep/preview_ggfx_lic_domino.png" alt="">
+                    <img class="previewPic" src="docs_consultaCep/preview_ggfx_lic_domino.png" alt="Miniatura: projeto domino (lab)">
                 </li>
             </ul>
         </p>
