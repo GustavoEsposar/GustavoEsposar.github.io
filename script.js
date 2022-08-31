@@ -4,12 +4,18 @@ const buttonAbout = document.querySelector('.about')
 const buttonProjects = document.querySelector('.projects')
 //-----------------------------------
 
+// -----------  Setting a constant for viewPort Height and Width -----------
+const root = document.documentElement
+root.style.setProperty('--original-viewport-height', window.innerHeight+"px");
+root.style.setProperty('--original-viewport-width', window.innerWidth+"px");
+//--------------------------------------------------------------------------
+
 buttonAbout.onclick = () => {
     leftAside.innerHTML = `
         <h1>Sobre mim</h1>
         <p>
             Olá, sou o Gustavo, estudante de <strong>Ciência da Computação</strong> na <strong><em>PUC-SP</em></strong>
-            e atualmente no quarto período do curso. Seja muito bem-vindo(a) ao meu Portfólio!
+            e atualmente no quarto período do curso. Seja muito bem-vindo(a) ao meu Portifólio!
         </p>
         <p>
             Na seção <span><strong>Projetos</strong></span> estão disponíveis alguns trabalhos desenvolvidos para estudo.
