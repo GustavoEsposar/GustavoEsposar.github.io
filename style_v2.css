@@ -1,0 +1,417 @@
+/*  style.css
+Autor:  Gustavo Barbieri Esposar
+Date:   2022 08 26
+*/
+@import "css_home/variables.css";
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+body {
+    position: relative;
+    line-height: 1.6;
+    font-size: 16px;
+    background-color: black;
+}
+
+.container {
+    width: 80vw;
+    min-height: var(--original-viewport-height);   
+    margin: 0 auto;
+}
+
+.background-video {
+    position: fixed;
+    z-index: -1;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/*************    
+    HEADER       
+**************/
+.header {
+    margin-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid aliceblue;
+}
+
+.header .listElements {
+    display: flex;
+    justify-content: space-around;
+}
+
+.header .listElements li {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    height: 150px;
+    align-items: center;
+}
+
+.header .listElements .profile img {
+    height: 150px;
+    border: 2px solid white;
+    border-radius: 50%;
+    box-shadow: 0 0 20px white;
+}
+
+.header .listElements .name {
+    text-align: center;
+}
+
+.header .listElements .name h1 {
+    font-family: 'Comfortaa', cursive;
+    font-size: 3.2em;
+    letter-spacing: 5px;
+    color: aliceblue;
+    text-shadow: 0 0 5px var(--blur-color);
+    /*    padding-top: 20px;*/
+}
+
+.header .listElements .univ img {
+    height: 155px;
+}
+
+.header .listElements .univ a {
+    border-radius: 20px;
+    transition: 300ms;
+}
+
+.header .listElements .univ a:hover {
+    box-shadow: 0 0 20px white;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/*************
+    NAVBAR     
+**************/
+.nav {
+    padding: 10px;
+    border-bottom: 1px solid white;
+}
+
+.nav .sub-container {
+    margin: 0 auto;
+    width: 25%;
+}
+
+.nav .listLinks {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav .listLinks li {
+    list-style: none;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 5px 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px black;
+    cursor: pointer;
+    transition: all 400ms ease;
+}
+
+.nav .listLinks li:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+    box-shadow: 0 0 15px var(--blur-color);
+}
+
+.nav .listLinks li a {
+    text-decoration: none;
+    letter-spacing: 2px;
+    color: aliceblue;
+    text-shadow: 0 0 5px var(--blur-color);
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+/*************    
+    CONTENT     
+**************/
+.content {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 20px;
+    color: white;
+    height: 100%;
+}
+
+.content .left-aside {
+    width: 36%;
+    min-height: 500px;
+    padding: 20px;
+    border-radius: 15px;
+    background: linear-gradient(-45deg,
+    rgba(13, 36, 42, 1) 0%,
+    rgba(27, 93, 101, 1) 20%,
+    rgba(20, 118, 143, 1) 40%,
+    rgba(63, 152, 170, 1) 60%,
+    rgb(94, 149, 163) 80%,
+    rgb(145, 188, 197) 100%);
+    background-size: 400% 400%;
+    animation: backgroundChange 15s ease infinite;
+    box-shadow: 0 0 20px aliceblue;
+}
+
+.content .left-aside h1 {
+    text-align: center;
+    font-size: 2em;
+}
+
+.content .left-aside p {
+    font-size: 1.2em;
+    text-indent: 20px;
+    margin: 10px 0;
+}
+
+.content .left-aside ul {
+    position: relative;
+    left: 5%;
+    font-size: 1.2em;
+    font-style: italic;
+}
+
+.content .left-aside h3 {
+    font-size: 1.5em;
+}
+
+.content .left-aside a {
+    font-style: normal;
+    text-decoration: none;
+    letter-spacing: 2px;
+    color: aliceblue;
+    text-shadow: 0 0 5px var(--blur-color);
+    font-size: 1.2em;
+    font-weight: bold;
+    transition: all 200ms ease;
+}
+
+.content .left-aside .projectsList li {
+    position: relative;
+}
+
+.content .left-aside .projectsList li a:hover {
+    text-shadow: 0 0 15px white;
+}
+
+.content .left-aside .projectsList li a:hover + .previewPic {
+    visibility: visible;
+    opacity: 1;
+}
+
+.content .left-aside .projectsList .previewPic {
+    position: absolute;
+    height: 100px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px aliceblue;
+    right: 5%;
+    z-index: 1;
+    visibility:hidden;
+    opacity:0;
+    transition:visibility linear 200ms, opacity 200ms linear;
+}
+
+.content .right-aside {
+    position: sticky;
+    overflow: hidden;
+    top: 40px;
+    /*padding-top: 56.26%;*/
+    text-align: center;
+    width: 60%;
+    height: 500px;
+    background-color: black;
+    border-radius: 3%;
+    box-shadow: 0 0 20px aliceblue;
+}
+
+.content .right-aside iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/*************    
+    FOOTER  
+**************/
+.footer {
+    border-top: 1px solid white;
+    padding: 30px 0;
+}
+
+.footer .iconsList {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+}
+
+.footer .iconsList .icon img {
+    width: 100px;
+    border-radius: 50%;
+    box-shadow: 0 0 20px white;
+}
+
+.footer .iconsList .icon img:hover {
+    transform: scale(1.2);
+    transition: 500ms;
+    -webkit-transform: scale(1.2);
+    -webkit-transition: 500ms;
+}
+
+.footer h4 {
+    font-size: 1.2em;
+    text-align: center;
+    padding: 20px 0 0;
+    color: aliceblue;
+    text-shadow: 0 0 5px var(--blur-color);
+}
+
+/************************
+    Gradient animation    
+*************************/
+@keyframes backgroundChange {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/**************************************
+    Responsiveness to width changes    
+***************************************/
+@media screen and (max-width:1401px) {
+    .nav .sub-container {
+        width: 35%;
+    }
+
+    .content .left-aside {
+        width: 42%;
+    }
+    
+    .content .right-aside {
+        width: 53%;
+        height: 420px;
+    }
+}
+
+@media screen and (max-width:1216px) {
+    .container {
+        width: 90vw;
+    }
+
+    .header .listElements .name h1 {
+        font-size: 3.1em;
+        letter-spacing: 2px;
+    }
+}
+
+@media screen and (max-width:975px) {
+    .container {
+        width: 80vw;
+    }
+
+    .nav .sub-container {
+        width: 45%;
+    }
+
+    .content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .content .left-aside {
+        width: 100%;
+    }
+
+    .content .right-aside {
+        margin-top: 40px;
+        width: 90%;
+    }
+}
+
+@media screen and (max-width:800px) {
+    .nav .sub-container {
+        width: 55%;
+    }
+
+    .header .listElements .name h1 {
+        font-size: 2.65em;
+        letter-spacing: 2px;
+    }
+}
+
+@media screen and (max-width:674px) {
+    .container {
+        width: 85vw;
+    }
+
+    .background-video {
+        position: fixed;
+        height: 100vh;
+        width: auto;
+        min-height: var(--original-viewport-height);
+        left: -100%;
+        top: 0;
+        will-change: transform;
+        z-index: -1;
+        transform: translate(0, 0);
+    }
+
+    .header .listElements {
+        height: 520px;
+    }
+
+    .nav .sub-container {
+        width: 95%;
+    }
+
+    .header .listElements {
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .content .right-aside {
+        width: 100%;
+    }
+
+    .content .left-aside {
+        background: linear-gradient(-45deg,
+        rgba(27, 93, 101, 1),
+        rgba(20, 118, 143, 1),
+        rgba(63, 152, 170, 1));
+        animation: none;
+    }
+
+    .content .left-aside .projectsList li .previewPic{
+        position: relative;
+        display: none;
+    }
+
+    .content .left-aside .projectsList li a:hover + .previewPic {
+        display: block;
+    }
+
+    .footer .iconsList {
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        height: 500px;
+    }
+}

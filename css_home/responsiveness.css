@@ -7,12 +7,11 @@
     }
 
     .content .left-aside {
-        width: 42%;
+        width: 48%;
     }
     
     .content .right-aside {
-        width: 53%;
-        height: 420px;
+        width: 48%;
     }
 }
 
@@ -47,8 +46,8 @@
 
     .content .right-aside {
         margin-top: 40px;
-        width: 90%;
-    }    
+        width: 100%;
+    }
 }
 
 @media screen and (max-width:800px) {
@@ -57,7 +56,7 @@
     }
 
     .header .listElements .name h1 {
-        font-size: 2.4em;
+        font-size: 2.65em;
         letter-spacing: 2px;
     }
 }
@@ -101,7 +100,21 @@
         display: none;
     }
 
-    .content .left-aside .projectsList li a:hover + .previewPic {
+    .content .right-aside .projectsList .previewPic {
+        display: none;
+        position: relative;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        margin-left: auto;
+        margin-right: auto;
+        height: 100px;
+        border-radius: 15px;
+        box-shadow: 0 0 10px aliceblue;
+        z-index: 1;
+        transition: opacity 200ms linear;
+    }
+    
+    .content .right-aside .projectsList li a:hover + .previewPic {
         display: block;
     }
 
