@@ -7,13 +7,17 @@
     padding: 40px 20px;
     color: white;
     height: 100%;
-    word-break: break-all;
 }
 
 .content  p {
     font-size: 1.2em;
     text-indent: 20px;
     margin: 10px 0;
+}
+
+.content p > p {
+    display: block;
+    margin-left: 20px;
 }
 
 .content .left-aside, .content .right-aside {
@@ -32,13 +36,18 @@
     animation: backgroundChange 15s ease infinite;
     box-shadow: 0 0 8px aliceblue;
     opacity: 0.8;
-    transition: transform 0.3s ease, opacity  0.3s ease;
+    transition: transform 0.3s ease, opacity  0.3s ease, width 0.3s ease;
+    z-index: 1;
 }
 
 .content .left-aside:hover, .content .right-aside:hover {
     transform: scale(1.05);
     box-shadow: 0 0 20px aliceblue;
     opacity: 1;
+}
+
+.content .left-aside .list {
+    padding-left: 25px;
 }
 
 .content .left-aside h1 {
@@ -53,12 +62,17 @@
     font-style: italic;
 }
 
+.content .left-aside h2 {
+    font-size: 1.7em;
+}
+
 .content .left-aside h3 {
     font-size: 1.5em;
 }
 
 .content .right-aside {
     padding: 30px;
+    word-break: break-all;
 }
 
 .content .right-aside h1 {

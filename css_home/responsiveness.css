@@ -48,6 +48,10 @@
         margin-top: 40px;
         width: 100%;
     }
+
+    .content .left-aside:hover, .content .right-aside:hover {
+        width: 110%;
+    }
 }
 
 @media screen and (max-width:800px) {
