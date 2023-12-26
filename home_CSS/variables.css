@@ -1,0 +1,10 @@
+:root {
+    /*--original-viewport-width: JS*/
+    /*--original-viewport-height: JS*/
+    --blur-color: rgb(108, 182, 211);
+}
+
+::selection {
+    background-color: #333333; 
+    color: white; 
+}

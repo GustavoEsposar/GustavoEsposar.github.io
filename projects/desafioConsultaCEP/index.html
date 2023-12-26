@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta CEP</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/local.svg" type="image/svg">
+    <!-- Setting a constant for viewPort Height  -->
+    <script>document.documentElement.style.setProperty('--original-viewport-height', window.innerHeight+"px")</script>
+</head>
+<body>
+    <section class="container">
+        <header class="header">
+            <h1>Consulta CEP</h1>
+            <p>
+                Informando um CEP o sistema automaticamente preencherá os demais campos.
+            </p>
+        </header>
+        <form class="formulario" action="">
+            <ul class="lista">
+                <li class="cepField">
+                    <label>Cep:</label>
+                    <input type="text" name="array[]">
+                </li>
+                <li class="ruaField">
+                    <label>Rua:</label>
+                    <input type="text" name="array[]">
+                </li>
+                <li class="bairroField">
+                    <label>Bairro:</label>
+                    <input type="text" name="array[]">
+                </li>
+                <li class="cidadeField">
+                    <label>Cidade:</label>
+                    <input type="text" name="array[]">
+                </li>
+                <li class="estadoField">
+                    <label>Estado:</label>
+                    <input type="text" name="array[]">
+                </li>
+                <li class="ibgeField">
+                    <label>IBGE:</label>
+                    <input type="text" name="array[]">
+                </li>
+            </ul>
+            <div class="divBotao">
+                <button type="submit">Consultar</button>
+            </div>
+        </form>
+        <div class="divErro">
+            <p></p>
+        </div>
+    </section>
+    <!-- JavaScript import -->
+    <script src="script.js"></script>
+</body>
+</html>
