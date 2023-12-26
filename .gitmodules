@@ -1,0 +1,4 @@
+[submodule "projects/Desafio-Frontend_Developer"]
+	path = projects/Desafio-Frontend_Developer
+	url = git@github.com:GustavoEsposar/Desafio-Frontend_Developer.git
+	branch = main
