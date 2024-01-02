@@ -36,7 +36,7 @@
     animation: backgroundChange 15s ease infinite;
     box-shadow: 0 0 8px aliceblue;
     opacity: 0.8;
-    transition: transform 0.3s ease, opacity  0.3s ease, width 0.3s ease;
+    transition: all 0.3s ease, opacity  0.3s ease, width 0.3s ease;
     z-index: 1;
 }
 

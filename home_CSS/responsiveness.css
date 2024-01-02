@@ -91,6 +91,13 @@
         width: 100%;
     }
 
+    .content .left-aside:hover, .content .right-aside:hover {
+        transform: none;
+        width: 100vw;
+        box-shadow: 0 0 20px aliceblue;
+        opacity: 1;
+    }
+
     .content .left-aside {
         background: linear-gradient(-45deg,
         rgba(27, 93, 101, 1),
