@@ -2,3 +2,6 @@
 	path = projects/Desafio-Frontend_Developer
 	url = git@github.com:GustavoEsposar/Desafio-Frontend_Developer.git
 	branch = main
+[submodule "projects/TideWaveBlocker"]
+	path = projects/TideWaveBlocker
+	url = git@github.com:GustavoEsposar/TideWaveBlocker.git
