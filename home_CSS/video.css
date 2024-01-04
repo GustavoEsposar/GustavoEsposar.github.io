@@ -1,16 +1,15 @@
 .video  {
     position: relative;
     overflow: hidden;
-    /*padding-top: 56.26%;*/
     text-align: center;
-    width: 90%;
-    height: 500px;
+    height: 600px;
     background-color: black;
-    border-radius: 3%;
     box-shadow: 0 0 20px aliceblue;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 40px;
+    max-width: 560px;
+    margin: 0 auto;
+    margin-bottom: 50px;
 }
 
 .video  iframe {

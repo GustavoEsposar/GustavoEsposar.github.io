@@ -50,7 +50,11 @@
     }
 
     .content .left-aside:hover, .content .right-aside:hover {
-        width: 110%;
+        width: 100%;
+    }
+    
+    .video {
+        border-radius: 3%;
     }
 }
 
@@ -67,7 +71,11 @@
 
 @media screen and (max-width:674px) {
     .container {
-        width: 85vw;
+        width: 90vw;
+    }
+
+    .header {
+        padding-bottom: 40px;
     }
 
     .header .listElements {
@@ -83,6 +91,11 @@
         justify-content: space-between;
     }
 
+    .content {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
     .content .left-aside {
         min-height: auto;
     }
@@ -93,7 +106,6 @@
 
     .content .left-aside:hover, .content .right-aside:hover {
         transform: none;
-        width: 100vw;
         box-shadow: 0 0 20px aliceblue;
         opacity: 1;
     }
@@ -130,13 +142,14 @@
     }
 
     .footer .iconsList {
-        flex-direction: column;
+        flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        height: 500px;
     }
 
-
+    .footer .iconsList .icon img {
+        width: 70px;
+    }
 }
 
 @media (min-width: 200px) and (max-width: 975px) {
