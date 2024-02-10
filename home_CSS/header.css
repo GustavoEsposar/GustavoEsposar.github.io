@@ -29,6 +29,8 @@
 
 .header .listElements .name {
     text-align: center;
+    display: flex;
+    flex-direction: column;
 }
 
 .header .listElements .name h1 {
@@ -37,7 +39,12 @@
     letter-spacing: 5px;
     color: aliceblue;
     text-shadow: 0 0 5px var(--blur-color);
-    /*    padding-top: 20px;*/
+}
+
+.header .listElements .name h2 {
+    letter-spacing: 15px;
+    color: aliceblue;
+    text-shadow: 0 0 5px var(--blur-color);
 }
 
 .header .listElements .univ img {

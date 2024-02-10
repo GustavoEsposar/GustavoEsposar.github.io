@@ -64,7 +64,7 @@
     }
 
     .header .listElements .name h1 {
-        font-size: 2.65em;
+        font-size: 2.0em;
         letter-spacing: 2px;
     }
 }
@@ -80,6 +80,12 @@
 
     .header .listElements {
         height: 520px;
+        text-align: center;
+    }
+
+    .header .listElements .name h2 {
+        margin-top: 20px;
+        padding-left: 20px;
     }
 
     .nav .sub-container {
@@ -89,6 +95,16 @@
     .header .listElements {
         flex-direction: column;
         justify-content: space-between;
+    }
+
+    .content2 {
+        width: 100% !important;
+    }
+
+    .content2:hover {
+        transform: none;
+        box-shadow: 0 0 20px aliceblue;
+        opacity: 1;
     }
 
     .content {
