@@ -45,8 +45,18 @@
     opacity: 1;
 }
 
+.content .left-aside p + p {
+    text-indent: 30px;
+}
+
+.content .left-aside p:last-of-type {
+    text-indent: 0px;
+}
+
 .content .left-aside .list {
-    padding-left: 25px;
+    /* padding-left: 25px; */
+    display: flex;
+    justify-content: space-around;
 }
 
 .content .left-aside h1 {

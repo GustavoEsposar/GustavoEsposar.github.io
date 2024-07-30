@@ -134,6 +134,11 @@
         animation: none;
     }
 
+    .content .left-aside .list {
+        display: block;
+        padding-left: 25px;
+    }
+
     .content .left-aside .projectsList li .previewPic{
         position: relative;
         display: none;
